@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noithattiennga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/891b0e67f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header-info">
+            <div class="header-info__contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>:  0.378.951.780</p> 
+                <i class="zalo"></i> 
+                <a href="https://www.facebook.com/nguyen.d.tien.148?locale=vi_VN"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="header-info__cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav__logo page-click" href="#main" page="home" onclick="changePage(this)">
+                noithattiennga
+            </div>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <ul class="header-nav__lists">
+                <li class="header-nav__list">
+                    <a href="#sanpham" class="header-nav__list-a page-click" id='nav-sanpham' page="sanpham" onclick="changePage(this)">Sản Phẩm</a>
+                    <ul class="header-nav__list-products">
+                        <li class="header-nav__list-product"><a href="" class="header-nav__list-product-a" filter="sofa">sofa</a></li>
+                        <li class="header-nav__list-product"><a href="" class="header-nav__list-product-a" filter="ghean">ghế ăn</a></li>
+                        <li class="header-nav__list-product"><a href="" class="header-nav__list-product-a" filter="giuong">giường</a></li>
+                        <li class="header-nav__list-product"><a href="" class="header-nav__list-product-a" filter="tu">tủ </a></li>
+                        <li class="header-nav__list-product"><a href="" class="header-nav__list-product-a" filter="ke">kệ</a></li>
+                        <li class="header-nav__list-product"><a href="" class="header-nav__list-product-a" filter="giasach">giá sách</a></li>
+                    </ul>
+                </li>
+                <li class="header-nav__list">
+                    <a href="#gioithieu" class="header-nav__list-a page-click" page="gioithieu" onclick="changePage(this)">Giới Thiệu</a>
+                </li>
+                <li class="header-nav__list">
+                    <a href="#baiviet" class="header-nav__list-a page-click" page="baiviet" onclick="changePage(this)">Bài Viết</a>
+                </li>
+                <li class="header-nav__list">
+                    <a href="#something" class="header-nav__list-a page-click" page="something" onclick="changePage(this)">Something@@</a>
+                </li>
+            </ul>
+            <div class="header-nav__search">
+                <form action="" class="form-search">
+                    <input type="text" id="search-main" placeholder="Tìm kiếm" class="header-nav__search-box">
+                    <button type="submit" class="header-nav__search-button" page="search" onclick="changePage(this)">
+                        <i class="fa-solid fa-magnifying-glass page-click" href="#search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div id="mainPage" class="main-page home Page active">
+        <div class="main-content__1">
+            <img src="ảnh nội thất - Copy/sofa/405473271_1547774109398390_7464654815691160584_n.jpg" alt="noi that tien nga" class="main-content__1-img">
+            <!-- <div class="main-content__1-title">Nội Thất Tiến Nga</div> -->
+            <!-- <div class="main-content__1-subtitle">Hàng đặt. Hàng kỹ. Uy tín. Chuyên Nghiệp</div> -->
+        </div>
+        <div class="main-content__2">
+            <h2 class="main-content__2-title">Các mặt hàng phổ biến tại xưởng</h2>
+            <ul class="main-content__2-lists">
+                <li class="main-content__2-list">
+                    <a href="">SOFA</a>
+                    <p class="content-post">
+                        Loại sofa chúng tôi sản xuất được sử dụng gỗ KH yêu cầu để tạo khung xương, dáng theo mẫu khách hàng 
+                        chọn. Sau khi phun sơn, bộ sofa được đặt những chiếc nệm cao cấp bọc da bò lên. Loại sofa 
+                        được có khung xương bằng gỗ chắc chắn sẽ bền hơn các loại vật liệu khác như nhựa hay ocan.
+                        Và đặc biệt vẻ đẹp của gỗ sau khi sơn sẽ khiến cho căn phòng của bạn trở nên nổi bật và sang
+                        trọng
+                    </p>
+                    <p class="content-post"></p>
+                </li>
+                <li class="main-content__2-list">
+                    <a href="">GHẾ ĂN</a>
+                    <p class="content-post"></p>
+                    <img src="" alt="" class="content-post__img">
+                    <p class="content-post"></p>
+                </li>
+                <li class="main-content__2-list">
+                    <a href="">GIƯỜNG</a>
+                    <p class="content-post"></p>
+                    <img src="" alt="" class="content-post__img">
+                    <p class="content-post"></p>
+                </li>
+                <li class="main-content__2-list">
+                    <a href="">BÀN PHẤN</a>
+                    <p class="content-post"></p>
+                    <img src="" alt="" class="content-post__img">
+                    <p class="content-post"></p>
+                </li>
+                <li class="main-content__2-list">
+                    <a href=""></a>
+                    <p class="content-post"></p>
+                    <img src="" alt="" class="content-post__img">
+                    <p class="content-post"></p>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content__3">
+            <h1 class="main-content__3-title">Các loại gỗ <a href="#">noithattiennga</a> chuyên nhận</h1>
+            <ul class="main-content__3-lists">
+                <li class="main-content__3-list">
+                    <div class="main-content__3-list__title">1.GỖ ÓC CHÓ</div>
+                    <div class="main-content__3-list__content">
+                        <p class="main-content__3-list__content-1">Đây là loại gỗ chúng tôi chuyên làm. Gỗ óc chó là loại gỗ có giá thành tương đối cao nhưng đi kèm với nó
+                            là chất lượng. Khi nhìn vào 1 căn phòng nội thất óc chó, bạn có thể thấy rõ sự sang trọng ở một tầm cao 
+                            khiến chúng ta nghĩ ngay tới giới thượng lưu.</p>
+                        <p class="main-content__3-list__content-2">Tại xưởng noithattiennga đây là loại gỗ óc chó được nhập khẩu từ Bắc Mỹ, loại gỗ óc chó tốt nhất thị trường hiện nay. Bạn có thể
+                            yên tâm bởi chúng tôi đã sấy khô và chọn lọc những mảnh gỗ chất lượng trong mỗi sản phẩm.</p>
+                        <p class="main-content__3-list__content-3">Nếu bạn tìm hiểu sẽ thấy tại các showrom trung bình 1 bộ sofa óc chó có giá khoảng hơn 100tr.
+                            Đây có lẽ mức giá khá hợp lí. Điều đặc biệt ở chúng tôi là tự sản xuất từ mộc đến sơn, bên cạnh 
+                            đó chi phí mặt bằng showrom là không có. Bởi vậy 1 điều dễ hiểu khi bạn chọn chúng tôi là 1  điều 
+                            khôn ngoan khi mức giá chúng tôi đưa ra luôn thấp hơn mặt bằng chung. Ví dụ 1 bộ sofa trung bình 
+                            100tr thì tại cơ sở chúng tôi mức giá có thể ở khoảng 80tr. Đây là sự khác biệt khiến bạn có thể 
+                            ở lại và tin tưởng chúng tôi bởi chất lượng chúng tôi mang lại với giá thành hấp dẫn</p>
+                    </div>
+                </li>
+                <li class="main-content__3-list">2.GỖ SỒI</li>
+                <li class="main-content__3-list">3.GỖ MUN</li>
+                <li class="main-content__3-list">4.GỖ HƯƠNG</li>
+                <li class="main-content__3-list">---Ngoài ra nếu bạn muốn đặt bất kỳ loại gỗ nào khác vui lòng liên hệ: 0378951780 để được tư vấn---</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sanphamPage" class="sanpham-page sanpham Page hidden">
+        <div class="sanpham-page__title">Những sản phẩm của nội thất tiến nga</div>
+        <div class="sanpham-page_filter-options">
+            <div class="sanpham-page_filter-options_title">Lọc:</div>
+            <button class="sanpham-page_filter-option" filter="all" onclick="filter(this)">Tất cả</button>
+            <button class="sanpham-page_filter-option" filter="sofa" onclick="filter(this)">Sofa</button>
+            <button class="sanpham-page_filter-option" filter="ghean" onclick="filter(this)">Ghế ăn</button>
+            <button class="sanpham-page_filter-option" filter="giuong" onclick="filter(this)">Giường</button>
+            <button class="sanpham-page_filter-option" filter="tuke" onclick="filter(this)">Tủ,kệ</button>
+        </div>
+
+        <ul class="sanpham-lists">
+            <li class="sanpham-list sofa">
+                <div class="sanpham-list__title" >Sofa</div>
+                <div class="sanpham-list__content"></div>
+            </li>
+            <li class="sanpham-list ghean">
+                <div class="sanpham-list__title" >Ghế ăn</div>
+                <div class="sanpham-list__content"></div>
+            </li>
+            <li class="sanpham-list giuong">
+                <div class="sanpham-list__title" >Giường</div>
+                <div class="sanpham-list__content"></div>
+            </li>
+            <li class="sanpham-list tuke">
+                <div class="sanpham-list__title" >Tủ, kệ</div>
+                <div class="sanpham-list__content"></div>
+            </li>
+            <li class="sanpham-list">
+                <div class="sanpham-list__title" ></div>
+                <div class="sanpham-list__content"></div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="gioithieuPage" class="gioithieu-page gioithieu Page hidden">
+        <div class="gioithieu-page__block">
+            <div class="gioithieu-page__content">
+                <div class="gioithieu-page__title">Giới thiệu</div>
+            <p class="gioithieu-page__title-content">
+                Noithattiennga tự hào là một địa chỉ uy tín với hơn 20 năm kinh nghiệm trong lĩnh vực sản xuất nội thất. Tại chúng tôi, chúng tôi không chỉ sản xuất từ mộc đến sơn mà còn đặt sự chăm sóc và sự tâm huyết vào từng sản phẩm.
+            </p>
+            <p class="gioithieu-page__title-content">
+                Với tôn chỉ "Uy tín - Chất lượng - An toàn", chúng tôi cam kết mang đến cho khách hàng những sản phẩm nội thất chất lượng nhất, đáp ứng mọi nhu cầu và mong muốn của họ. Điều đó đồng nghĩa với việc chúng tôi không ngừng nỗ lực để cung cấp những sản phẩm độc đáo, sang trọng và chất lượng.
+            </p>
+            <p class="gioithieu-page__title-content">
+                Xưởng sản xuất của chúng tôi nằm tại xóm 3, thôn Đồng Bụt, Quốc Oai, Hà Nội - nơi mà chúng tôi chú trọng vào sự tỉ mỉ và chuyên nghiệp trong mỗi bước sản xuất. Chúng tôi rất mong được chào đón khách hàng đến thăm xưởng để trực tiếp trải nghiệm không gian làm việc và chất lượng sản phẩm của chúng tôi.
+            </p>
+            <p class="gioithieu-page__title-content">
+                Để đảm bảo sự hài lòng tuyệt đối từ phía khách hàng, chúng tôi luôn cung cấp hình ảnh của sản phẩm trong quá trình sản xuất. Nếu có bất kỳ yêu cầu hay đề xuất thay đổi nào từ phía khách hàng, chúng tôi luôn sẵn lòng lắng nghe và thực hiện kịp thời, đảm bảo rằng mọi sản phẩm đều đáp ứng đúng theo mong muốn của khách hàng.
+            </p>
+            <p class="gioithieu-page__title-content">
+                Với niềm tin vào chất lượng của mình, chúng tôi bảo đảm mỗi sản phẩm ra khỏi xưởng đều được bảo hành trong 3 năm. Đó là cam kết của chúng tôi trong việc đảm bảo sự tin tưởng và hài lòng của khách hàng với mỗi sản phẩm mà chúng tôi cung cấp.
+            </p>
+            </div>
+            <div class="form-contact">
+                <h2 class="form-contact__title">LIÊN HỆ</h2>
+                <form action="#" method="post" class="form-contact__content">
+                    <label for="name">Họ và tên: </label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" >
+                    
+                    <label for="phone">Số điện thoại: </label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="message">Nội dung:</label>
+                    <textarea placeholder="vd: tôi muốn đặt 1 bộ sofa óc chó (sau đó chúng tôi sẽ liên lạc với bạn)" id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="baivietPage" class="baiviet-page Page baiviet hidden">
+        <div class="baiviet-page__title">Bài viết</div>
+        <div class="error" >Tính năng đang hoàn thiện</div>
+    </div>
+    <div id="somethingPage" class="something-page Page something hidden">
+        <div class="something-page__title">something@</div>
+        <div class="error">Tính năng đang trong quá trình hoàn thiện</div>
+    </div>
+    
+    <div id="searchPage" class="search-page Page hidden">
+        <div class="search-page__title">Tìm kiếm</div>
+        <form id="search-form" class="search-page__contents">
+            <input type="text" placeholder="Tìm kiếm" class="search-page__content-box">
+            <button type="submit" class="search-page__content-submit">go</button>
+        </form>    
+        <div class="search-page__content-title">Kết quả :</div>
+            <div class="search-page__content"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-infos">
+            <div class="footer-about">
+                <div class="footer-about__title">VỀ CHÚNG TÔI</div>
+                <ul class="footer-about__contents">
+                    <li class="footer-about__content">Cơ sở sản xuất trực tiếp từ mộc đến sơn do đó không bị khống giá</li>
+                    <li class="footer-about__content">Có kinh nghiệm trên 20 năm tại Thạch Thất-Quốc Oai-Hà Nội (1 khu vực sôi nổi các làng nghề nội thất)</li>
+                    <li class="footer-about__content">Bảo hành 3 nam , cơ sở uy tín .Do đó khách hàng có thể     đến xem xưởng</li>
+                </ul>
+            </div>
+            <ul class="footer-info">
+                <li class="footer-info__item">THÔNG TIN LIÊN HỆ</li>
+                <li class="footer-info__item">Hotline: 0378951780 / 0326840085</li>
+                <li class="footer-info__item" style="display: flex;">Facebook: <P style="cursor: pointer; color: #c76248 !important; margin-left: 5px;" onclick="redirectToLink('https://www.facebook.com/nguyen.d.tien.148?locale=vi_VN')">Nguyễn Doãn Tiến</P></li>
+                <li class="footer-info__item">Zalo: 0378951780</li>
+                <li class="footer-info__item" style="color: #ece801 ;">Địa chỉ : xóm 3, thôn Đồng Bụt, Quốc Oai Hà Nội</li>
+            </ul>
+        </div>  
+        <div class="footer-policys">
+            <div class="footer-policy">HỖ TRỢ KHÁCH HÀNG</div>
+            <div class="footer-policy">-Uy tín: khách hàng có thể đến trực tiếp xưởng kiểm tra và lên mxh xem những đánh giá của những người mua trước</div>
+            <div class="footer-policy">-Chất lượng: Hàng đặt cao cấp sản xuất trực tiếp nếu muốn KH có thể yêu cầu chúng tôi gửi hình ảnh tiến độ sản phẩm do vậy chất lượng sẽ luôn hài lòng khách hàng</div>
+            <div class="footer-policy">-An toàn: Nếu hàng bị lỗi KH có thể lh chúng tôi để được bảo hành trong thời gian 3 năm</div>
+            <div class="footer-policy">-Lưu ý: KH cần cọc trước 20% giá tiền sản phẩm</div>
+        </div>
+        <div class="footer-end" style="text-align: center; padding-bottom: 20px;">Nội thất Tiến Nga . Rất vui khi bạn đến với chúng tôi</div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

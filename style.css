@@ -1,0 +1,440 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-color: #f1f1f1;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* css */
+html{
+    font-family: 'consolas';
+}
+.header-info{
+    color: #fff;
+    background-color: #343434;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 40px;
+}
+.header-info__contact{
+    display: flex;
+    align-items: center;
+}
+.header-info__contact p{
+    margin-left: 6px;
+    color: rgba(238, 5, 5, 0.925);
+    letter-spacing: 0px;
+}
+.header-info__cart{
+    cursor: pointer;
+    font-size: 20px;
+}
+.header-info__contact i:last-child{
+    margin-left: 20px;
+    /* color: #89909e; */
+    color: #fff;
+}
+.header-info__contact i:first-child{
+    font-size: 18px;
+    /* color: #89909e; */
+    cursor: pointer;
+}
+
+
+
+
+
+/* navigation */
+.header-nav{
+    display: flex;
+    padding: 0 39px;
+    line-height: 81px;
+    font-size: 20px;
+    border-bottom: solid 1px #ECEFF1;
+}
+.header-nav__lists{
+    display: flex;
+    font-size: 16px !important;
+    width: 100%;
+    justify-content: center;
+}
+.header-nav__list:first-child{
+    font-weight: 600;
+}
+.header-nav__list{
+    padding: 0 10px;
+}
+.header-nav__list a{
+    display: block;
+}
+.header-nav__logo{
+    cursor: pointer;
+    font-size: 28px;
+    color: rgb(163, 101, 57) !important;
+}
+.header-nav__search{
+    width: 275px;
+    text-align: right;
+}
+.header-nav__search-box{
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #ECEFF1;
+    width: 215px;
+    height: 32px;
+    text-align: left;
+    border: solid thin #ECEFF1;
+}
+.header-nav__search-box:focus-visible {
+    border-color:#767677;
+}
+.header-nav__search-box::placeholder{
+    color: #000;
+    font-size: 14px;
+}
+.header-nav__search{
+    height: 81px;
+}
+.form-search{
+    position: relative;
+    height: 81px;
+}
+.header-nav__search i{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 54%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+.header-nav__list:first-child{
+    position: relative;
+}
+#nav-sanpham{
+    color: rgb(163, 101, 57);
+}
+
+.header-nav__list:first-child:hover .header-nav__list-products{
+    opacity: 1;
+    visibility: visible;
+
+}
+.header-nav__list-products{
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.15) ;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    left: -4px;
+    padding: 12px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.header-nav__list-products::after{
+    content: "";
+    position: absolute;
+    top:-10px;
+    left: 40px;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent ;
+    border-left: 10px solid  transparent;  
+}
+.header-nav__list-product {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+    line-height: 25px !important;
+    text-align: left;
+    font-weight: 100;
+}
+.header-nav__list-product:last-child{
+    border: none;
+}
+.header-nav__list-product a {
+    color: #000;
+}
+.header-nav__list-product:hover >a{
+    color: #a12b2b;
+}
+.header-nav__list:hover>a{
+    color: #a12b2b;
+}
+/* .header-nav__list a:hover{
+    color: #a12b2b;
+} */
+
+
+
+
+/* footer */
+#footer{
+    background-color: #131A22;
+    line-height: 20px;
+    font-size: 14px;
+    color: #e7e7e7;
+}
+.footer-infos{
+    display: flex;
+}
+.footer-about{
+    width: calc(50% - 40px);
+    margin: 40px 40px;
+}
+.footer-info{
+    margin: 40px 40px;
+}
+.footer-info__item:first-child,.footer-about__title,.footer-policy:first-child{
+    margin-bottom: 15px;
+    color: rgb(163, 101, 57);
+    font-size: 20px;
+}
+.footer-policys{
+    padding:0px 40px 40px ;
+    text-align:justify;
+}
+
+
+
+/* main */
+.main-content__1-img{
+   width: 100%;
+   min-width: 1024px;
+   height: auto;
+   margin: 0 !important;
+}
+.main-content__2,.main-content__3{
+    padding: 40px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.main-content__2 p,.main-content__3 p{
+    margin-bottom: 20px;
+}
+.main-content__3 h1,.main-content__2-title{
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #a12b2b;
+}
+
+
+
+/* css chung page */
+.hidden{
+    display: none;
+}
+.selected{
+    color: #fff;
+    background-color: rgba(190, 16, 16, 0.692);
+}
+.sanpham-page__title,.baiviet-page__title,.gioithieu-page__title,.search-page__title,.something-page__title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    font-weight: 600;
+    color: rgb(163, 101, 57) !important;
+}
+#baivietPage,#searchPage,#somethingPage{
+    padding: 40px;
+    line-height: 22px;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #000;
+    padding: 30px;
+}
+
+
+/* --------sanpham-page */
+.sanpham-lists{
+    padding: 20px 40px;
+}
+.sanpham-list__title{
+    color: rgb(196, 94, 21);
+    font-size: 20px;
+}
+.sanpham-page_filter-options{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 20px 40px;
+}
+.sanpham-page_filter-options_title{
+    font-size: 23px;
+    color: rgb(184, 3, 42);
+    padding: 10px 0;
+}
+.sanpham-page_filter-option{
+    cursor: pointer;
+    height: 25px;
+    padding: 0 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.sanpham-page_filter-option:hover{
+    opacity: 0.8;
+    color:#a12b2b;
+}
+.selected:hover{
+    opacity: 1;
+    color: #fff;
+}
+
+
+
+/* ------------gioithieu-page------ */
+.gioithieu-page__block{
+    display: flex;
+}
+.gioithieu-page__content{
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 800px;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.gioithieu-page__title{
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.gioithieu-page__title-content{
+    padding-bottom: 20px;
+}
+
+
+
+/* ----------search-page------- */
+#searchPage{}
+.search-page__content-box{
+    max-width: 300px;
+    margin:-20px auto 0;
+    display: block;
+}
+.search-page__content-submit{
+  margin: -10px auto 30px;
+  display: block;
+  background-color: #a12b2b;
+  border: #ccc;
+  color: #f8f8f8;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+
+
+/* -----baiviet-page------ */
+#baivietPage{}
+
+
+
+/* -----form lien he */
+.form-contact{
+    height: 520px;
+    margin-top: 70px !important;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c7ecee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-contact__title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type='tel'],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+}
+textarea::placeholder {
+    opacity: 0.6;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+ 
+
+
